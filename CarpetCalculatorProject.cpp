@@ -28,6 +28,28 @@ double getValidPositivePrice(const string& prompt) {
     return val;
 }
 
+void runFeatureTests() {
+    cout << "\n=== AUTOMATED FEATURE & RELATIONSHIP TESTS ===" << endl;
+
+    FeetInches original(6, 4);
+    FeetInches copyObj(original);
+    copyObj.setFeet(10);
+    cout << "Copy Test -> Original: " << original << " | Copy: " << copyObj << endl;
+
+    FeetInches w1(10, 0), w2(12, 0);
+    cout << "10'0\" * 12'0\" = " << (w1 * w2) << " sq ft (Expected: 120.00)" << endl;
+
+    FeetInches f1(5, 6), f2(4, 3);
+    cout << "5'6\" * 4'3\"   = " << setprecision(3) << (f1 * f2)
+        << " sq ft (Expected: 23.375)" << setprecision(2) << endl;
+
+    RoomDimension smallRoom(f1, f2);
+    RoomCarpet budgetCarpet(&smallRoom, 4.00);
+    RoomCarpet luxuryCarpet(&smallRoom, 8.50);
+    cout << "Shared Room Budget Cost ($4.00/sqft): $" << budgetCarpet.getTotalCost() << endl;
+    cout << "Shared Room Luxury Cost ($8.50/sqft): $" << luxuryCarpet.getTotalCost() << endl;
+}
+
 int main() {
     cout << fixed << setprecision(2);
     cout << "=== WESTFIELD CARPET CALCULATOR ===" << endl;
@@ -51,5 +73,6 @@ int main() {
     cout << "Price/Sq Ft:  $" << carpet.getCostPerSquareFoot() << endl;
     cout << "Total Cost:   $" << carpet.getTotalCost() << endl;
 
+    runFeatureTests();
     return 0;
 }

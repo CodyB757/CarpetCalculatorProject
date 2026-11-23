@@ -16,8 +16,9 @@ public:
         inches = i;
         simplify();
     }
+
     FeetInches(const FeetInches& other);
-    double operator*(const FeetInches& right) const;
+
     void setFeet(int f) { feet = f; }
     void setInches(int i) { inches = i; simplify(); }
 
@@ -31,6 +32,8 @@ public:
     bool operator>(const FeetInches&);
     bool operator<(const FeetInches&);
     bool operator==(const FeetInches&);
+
+    double operator*(const FeetInches& right) const;
 
     operator double();
     operator int();
