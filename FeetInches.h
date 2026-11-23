@@ -17,7 +17,7 @@ public:
         simplify();
     }
     FeetInches(const FeetInches& other);
-    
+    double operator*(const FeetInches& right) const;
     void setFeet(int f) { feet = f; }
     void setInches(int i) { inches = i; simplify(); }
 
