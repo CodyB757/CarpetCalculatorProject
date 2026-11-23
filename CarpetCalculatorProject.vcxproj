@@ -202,10 +202,12 @@
   <ItemGroup>
     <ClCompile Include="CarpetCalculatorProject.cpp" />
     <ClCompile Include="FeetInches.cpp" />
+    <ClCompile Include="RoomCarpet.cpp" />
     <ClCompile Include="RoomDimension.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FeetInches.h" />
+    <ClInclude Include="RoomCarpet.h" />
     <ClInclude Include="RoomDimension.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
