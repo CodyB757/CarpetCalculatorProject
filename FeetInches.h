@@ -16,7 +16,8 @@ public:
         inches = i;
         simplify();
     }
-
+    FeetInches(const FeetInches& other);
+    
     void setFeet(int f) { feet = f; }
     void setInches(int i) { inches = i; simplify(); }
 
