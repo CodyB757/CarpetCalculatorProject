@@ -18,5 +18,13 @@
     <ClCompile Include="CarpetCalculatorProject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FeetInches.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FeetInches.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

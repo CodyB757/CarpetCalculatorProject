@@ -201,6 +201,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CarpetCalculatorProject.cpp" />
+    <ClCompile Include="FeetInches.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FeetInches.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
